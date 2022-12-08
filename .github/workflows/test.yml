@@ -1,0 +1,19 @@
+on: [workflow_dispatch]
+
+jobs:
+  test-delete-image:
+    runs-on: ubuntu-latest
+    name: Test Delete Docker Image
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Local delete action
+        uses: ./
+        id: login
+        with:
+          owner: lookio
+          name: maven-content-scanner
+          # NOTE: using Personal Access Token
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: "0.1.18"
