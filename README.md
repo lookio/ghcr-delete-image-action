@@ -1,3 +1,5 @@
+migrated: https://gitlab.com/l1905/maven-business/maven-webchat/ghcr-delete-image-action
+
 # ghcr-delete-image
 
 [![CI](https://github.com/bots-house/ghcr-delete-image-action/actions/workflows/ci.yml/badge.svg)](https://github.com/bots-house/ghcr-delete-image-action/actions/workflows/ci.yml)
